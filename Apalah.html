@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" 
+      content="text/html; charset=utf-8">
+<html>
+ <head>
+  <title>
+   Product Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: var(--header-bg-color, #cfc5af);
+            color: var(--header-text-color, white);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: -100px;
+            animation: slideIn 2s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                left: -100px;
+            }
+            100% {
+                left: calc(50% - 40px);
+            }
+        }
+        .header .username {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        .header .status {
+            font-size: 14px;
+        }
+        .header .rating {
+            background-color: var(--rating-bg-color, #f0f0f0);
+            color: var(--rating-text-color, #cfc5af);
+            padding: 5px 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .header .followers {
+            font-size: 14px;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--nav-bg-color, #cfc5af);
+            padding: 10px 0;
+        }
+        .nav a {
+            color: var(--nav-link-color, white);
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        .nav a.active {
+            font-weight: bold;
+        }
+        .product-card {
+            background-color: var(--product-card-bg-color, white);
+            border-radius: 15px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .product-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .product-card .details {
+            flex: 1;
+        }
+        .product-card .details .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--product-title-color, #cfc5af);
+        }
+        .product-card .details .description {
+            font-size: 14px;
+            color: var(--product-description-color, #666);
+        }
+        .product-card .details .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--product-price-color, #ff5a00);
+            margin-top: 10px;
+        }
+        .product-card .details .sold {
+            font-size: 14px;
+            color: var(--product-sold-color, #666);
+            margin-top: 5px;
+        }
+        .product-card .details .location {
+            font-size: 14px;
+            color: var(--product-location-color, #666);
+            margin-top: 5px;
+        }
+        .funfact {
+            background-color: var(--funfact-bg-color, #fff);
+            border-radius: 15px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 16px;
+            color: var(--funfact-text-color, #666);
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <img alt="Profile picture of the user" height="80" src="Logo/logo1.jpeg" width="80"/>
+   <div class="username">
+    Cartenz
+   </div>
+   <div class="status">
+    Aktif Setiap Hari
+   </div>
+   <div class="rating">
+    <i class="fas fa-star">
+    </i>
+    5.0/5.0
+   </div>
+   <div class="followers">
+    Perut anda keroncongan di tanggal tua? segera datang ke outlet kami
+   </div>
+  </div>
+  <div class="nav">
+   <a class="active" href="#">
+    Produk
+   </a>
+  </div>
+  <div class="product-card">
+   <img alt="Image of Cimol" height="100" src="Logo/logo1.jpeg" width="100"/>
+   <div class="details">
+    <div class="title">
+     Cimol
+    </div>
+    <div class="description">
+     Cimol Pouch 70gr
+    </div>
+    <div class="price">
+     Rp.5000
+    </div>
+    <div class="sold">
+     <i class="fas fa-star">
+     </i>
+     5/5
+    </div>
+    <div class="location">
+     <i class="fas fa-map-marker-alt">
+     </i>
+     Kab. Bandung Barat
+    </div>
+   </div>
+  </div>
+  <div class="product-card">
+   <img alt="Image of Lemontea" height="100" src="Logo/logo1.jpeg" width="100"/>
+   <div class="details">
+    <div class="title">
+     Lemontea
+    </div>
+    <div class="description">
+     Lemontea Pouch 70gr
+    </div>
+    <div class="price">
+     Rp.5000
+    </div>
+    <div class="sold">
+     <i class="fas fa-star">
+     </i>
+     5/5
+    </div>
+    <div class="location">
+     <i class="fas fa-map-marker-alt">
+     </i>
+     Kab. Bandung Barat
+    </div>
+   </div>
+  </div>
+  <div class="funfact">
+   <h3>Fun Fact Lemon Tea:</h3>
+   <p>Detoks Alami: Lemon tea dikenal sebagai minuman detoksifikasi yang membantu membersihkan racun dari tubuh dan meningkatkan sistem kekebalan tubuh karena kandungan vitamin C yang tinggi.</p>
+   <p>Mood Booster: Aroma lemon dalam teh dipercaya dapat meningkatkan suasana hati dan mengurangi stres. Beberapa penelitian menunjukkan bahwa aroma jeruk dapat membantu relaksasi.</p>
+   <p>Populer di Banyak Negara: Lemon tea bukan hanya populer di negara tropis, tetapi juga di negara beriklim dingin seperti Inggris, di mana teh sering ditambahkan lemon sebagai pengganti susu.</p>
+   <p>Bantu Pencernaan: Lemon tea sering dikonsumsi setelah makan untuk membantu melancarkan pencernaan dan mengurangi kembung.</p>
+  </div>
+  <div class="funfact">
+   <h3>Fun Fact Cilok:</h3>
+   <p>Camilan Khas Bandung: Cilok adalah singkatan dari "aci dicolok", yaitu camilan khas Bandung yang terbuat dari tepung tapioka (aci) dan disajikan dengan cara dicolok menggunakan tusuk sate.</p>
+   <p>Tekstur Kenyal Unik: Karena terbuat dari tapioka, cilok memiliki tekstur yang kenyal, mirip dengan makanan lain berbahan aci seperti cimol dan cireng, yang semuanya merupakan jajanan populer di Jawa Barat.</p>
+   <p>Beragam Saus: Cilok bisa dinikmati dengan berbagai macam saus seperti sambal kacang, saus tomat, kecap, hingga kuah bakso.</p>
+   <p>Cilok Versi Mewah: Meskipun awalnya merupakan jajanan jalanan murah, kini cilok juga disajikan di restoran dengan varian isi yang lebih mewah, seperti daging sapi cincang, keju, hingga ayam suwir.</p>
+  </div>
+ </body>
+</html>
